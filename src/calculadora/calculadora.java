@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class calculadora {
 
 	/**
-	 * Le añado un comentario y luego tu
+	 * Le añado un comentario 
+	 * OK
 	 * @param args
 	 */
 	public static void main(String[] args) {
