@@ -28,29 +28,13 @@ public class calculadora {
 	            double num1, num2, result;
 	            
 	            if (userChoice.equals("add")) {
-	                System.out.print("Ingresa el primer número: ");
-	                num1 = scanner.nextDouble();
-	                System.out.print("Ingresa el segundo número: ");
-	                num2 = scanner.nextDouble();
-	                result = num1 + num2;
+	                result = sumaDosVariables(scanner);
 	            } else if (userChoice.equals("subtract")) {
-	                System.out.print("Ingresa el primer número: ");
-	                num1 = scanner.nextDouble();
-	                System.out.print("Ingresa el segundo número: ");
-	                num2 = scanner.nextDouble();
-	                result = num1 - num2;
+	                result = restadosVariables(scanner);
 	            } else if (userChoice.equals("multiply")) {
-	                System.out.print("Ingresa el primer número: ");
-	                num1 = scanner.nextDouble();
-	                System.out.print("Ingresa el segundo número: ");
-	                num2 = scanner.nextDouble();
-	                result = num1 * num2;
+	                result = multiplicaDosVariables(scanner);
 	            } else if (userChoice.equals("divide")) {
-	                System.out.print("Ingresa el primer número: ");
-	                num1 = scanner.nextDouble();
-	                System.out.print("Ingresa el segundo número: ");
-	                num2 = scanner.nextDouble();
-	                result = num1 / num2;
+	                result = divideDosVariables(scanner);
 	            } else {
 	                System.out.println("Opción no válida");
 	                continue;
@@ -61,6 +45,54 @@ public class calculadora {
 	        
 	        scanner.close();
 
+	}
+
+	private static double divideDosVariables(Scanner scanner) {
+		double num1;
+		double num2;
+		double result;
+		System.out.print("Ingresa el primer número: ");
+		num1 = scanner.nextDouble();
+		System.out.print("Ingresa el segundo número: ");
+		num2 = scanner.nextDouble();
+		result = num1 / num2;
+		return result;
+	}
+
+	private static double multiplicaDosVariables(Scanner scanner) {
+		double num1;
+		double num2;
+		double result;
+		System.out.print("Ingresa el primer número: ");
+		num1 = scanner.nextDouble();
+		System.out.print("Ingresa el segundo número: ");
+		num2 = scanner.nextDouble();
+		result = num1 * num2;
+		return result;
+	}
+
+	private static double restadosVariables(Scanner scanner) {
+		double num1;
+		double num2;
+		double result;
+		System.out.print("Ingresa el primer número: ");
+		num1 = scanner.nextDouble();
+		System.out.print("Ingresa el segundo número: ");
+		num2 = scanner.nextDouble();
+		result = num1 - num2;
+		return result;
+	}
+
+	private static double sumaDosVariables(Scanner scanner) {
+		double num1;
+		double num2;
+		double result;
+		System.out.print("Ingresa el primer número: ");
+		num1 = scanner.nextDouble();
+		System.out.print("Ingresa el segundo número: ");
+		num2 = scanner.nextDouble();
+		result = num1 + num2;
+		return result;
 	}
 
 }
