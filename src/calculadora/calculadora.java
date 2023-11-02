@@ -19,28 +19,28 @@ public class calculadora {
 	            System.out.println("Escribe 'multiply' para multiplicar dos números");
 	            System.out.println("Escribe 'divide' para dividir dos números");
 	            System.out.println("Escribe 'quit' para salir de la calculadora");
-	            String userChoice = scanner.next();
+	            String peticionUsuario = scanner.next();
 	            
-	            if (userChoice.equals("quit")) {
+	            if (peticionUsuario.equals("quit")) {
 	                break;
 	            }
 	            
-	            double num1, num2, result;
+	            double resultado;
 	            
-	            if (userChoice.equals("add")) {
-	                result = sumaDosVariables(scanner);
-	            } else if (userChoice.equals("subtract")) {
-	                result = restadosVariables(scanner);
-	            } else if (userChoice.equals("multiply")) {
-	                result = multiplicaDosVariables(scanner);
-	            } else if (userChoice.equals("divide")) {
-	                result = divideDosVariables(scanner);
+	            if (peticionUsuario.equals("add")) {
+	                resultado = sumaDosVariables(scanner);
+	            } else if (peticionUsuario.equals("subtract")) {
+	                resultado = restadosVariables(scanner);
+	            } else if (peticionUsuario.equals("multiply")) {
+	                resultado = multiplicaDosVariables(scanner);
+	            } else if (peticionUsuario.equals("divide")) {
+	                resultado = divideDosVariables(scanner);
 	            } else {
 	                System.out.println("Opción no válida");
 	                continue;
 	            }
 
-	            System.out.println("El resultado es: " + result);
+	            System.out.println("El resultado es: " + resultado);
 	        }
 	        
 	        scanner.close();
@@ -48,38 +48,38 @@ public class calculadora {
 	}
 
 	private static double divideDosVariables(Scanner scanner) {
-		double num1;
-		double num2;
-		double result;
+		double numeroIntro1;
+		double numeroIntro2;
+		double resultado;
 		System.out.print("Ingresa el primer número: ");
-		num1 = scanner.nextDouble();
+		numeroIntro1 = scanner.nextDouble();
 		System.out.print("Ingresa el segundo número: ");
-		num2 = scanner.nextDouble();
-		result = num1 / num2;
-		return result;
+		numeroIntro2 = scanner.nextDouble();
+		resultado = numeroIntro1 / numeroIntro2;
+		return resultado;
 	}
 
 	private static double multiplicaDosVariables(Scanner scanner) {
-		double num1;
-		double num2;
-		double result;
+		double numeroIntro1;
+		double numeroIntro2;
+		double resultado;
 		System.out.print("Ingresa el primer número: ");
-		num1 = scanner.nextDouble();
+		numeroIntro1 = scanner.nextDouble();
 		System.out.print("Ingresa el segundo número: ");
-		num2 = scanner.nextDouble();
-		result = num1 * num2;
-		return result;
+		numeroIntro2 = scanner.nextDouble();
+		resultado = numeroIntro1 * numeroIntro2;
+		return resultado;
 	}
 
 	private static double restadosVariables(Scanner scanner) {
-		double num1;
+		double numeroIntro;
 		double num2;
 		double result;
 		System.out.print("Ingresa el primer número: ");
-		num1 = scanner.nextDouble();
+		numeroIntro = scanner.nextDouble();
 		System.out.print("Ingresa el segundo número: ");
 		num2 = scanner.nextDouble();
-		result = num1 - num2;
+		result = numeroIntro - num2;
 		return result;
 	}
 
