@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class calculadora {
 
 	/**
-	 * Le añado un comentario 
-	 * OK
+	 * Este método hace las funciones de una calculadora 
+	 * @author José Luis Gonzalez, Darío Castillo
 	 * @param args
 	 */
 	public static void main(String[] args) {
