@@ -47,7 +47,7 @@ public class calculadora {
 
 	}
 
-	private static double divideDosVariables(Scanner scanner) {
+	public static double divideDosVariables(Scanner scanner) {
 		double numeroIntro1;
 		double numeroIntro2;
 		double resultado;
@@ -59,7 +59,7 @@ public class calculadora {
 		return resultado;
 	}
 
-	private static double multiplicaDosVariables(Scanner scanner) {
+	public static double multiplicaDosVariables(Scanner scanner) {
 		double numeroIntro1;
 		double numeroIntro2;
 		double resultado;
@@ -71,28 +71,28 @@ public class calculadora {
 		return resultado;
 	}
 
-	private static double restadosVariables(Scanner scanner) {
+	public static double restadosVariables(Scanner scanner) {
 		double numeroIntro;
-		double num2;
-		double result;
+		double numeroIntro2;
+		double resultado;
 		System.out.print("Ingresa el primer número: ");
 		numeroIntro = scanner.nextDouble();
 		System.out.print("Ingresa el segundo número: ");
-		num2 = scanner.nextDouble();
-		result = numeroIntro - num2;
-		return result;
+		numeroIntro2 = scanner.nextDouble();
+		resultado = numeroIntro - numeroIntro2;
+		return resultado;
 	}
 
-	private static double sumaDosVariables(Scanner scanner) {
-		double num1;
-		double num2;
-		double result;
+	public static double sumaDosVariables(Scanner scanner) {
+		double numeroIntro1;
+		double numeroIntro2;
+		double resultado;
 		System.out.print("Ingresa el primer número: ");
-		num1 = scanner.nextDouble();
+		numeroIntro1 = scanner.nextDouble();
 		System.out.print("Ingresa el segundo número: ");
-		num2 = scanner.nextDouble();
-		result = num1 + num2;
-		return result;
+		numeroIntro2 = scanner.nextDouble();
+		resultado = numeroIntro1 + numeroIntro2;
+		return resultado;
 	}
 
 }
