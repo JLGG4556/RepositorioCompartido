@@ -35,7 +35,10 @@ public class calculadora {
 	                resultado = multiplicaDosVariables(scanner);
 	            } else if (peticionUsuario.equals("divide")) {
 	                resultado = divideDosVariables(scanner);
-	            } else {
+	            } else if (peticionUsuario.equals("AreaCirculo")) {
+	                resultado = calcularAreaCircunferencia(scanner);
+	            }
+	            else {
 	                System.out.println("Opción no válida");
 	                continue;
 	            }
@@ -46,6 +49,16 @@ public class calculadora {
 	        scanner.close();
 
 	}
+	
+    
+    public static double calcularAreaCircunferencia(Scanner scanner) {
+    	
+    	System.out.println("Ingresa el radio");
+    	double radio = scanner.nextDouble();
+        double pi = 3.1415926535;
+        return pi * radio * radio;
+    }
+	
 
 	public static double divideDosVariables(Scanner scanner) {
 		double numeroIntro1;
