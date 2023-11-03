@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class calculadora {
 
+	public static final double NUMERO_PI = 3.1415926535;
+
 	/**
 	 * Este método hace las funciones de una calculadora 
 	 * @author José Luis Gonzalez, Darío Castillo
@@ -55,7 +57,7 @@ public class calculadora {
     	
     	System.out.println("Ingresa el radio");
     	double radio = scanner.nextDouble();
-        double pi = 3.1415926535;
+        double pi = NUMERO_PI;
         return pi * radio * radio;
     }
 	
